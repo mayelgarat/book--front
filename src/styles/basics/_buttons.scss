@@ -1,0 +1,16 @@
+button{
+    background-color: #94a6bf;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+
+    padding: 6px 15px;
+    margin-inline-end: 5px;
+    margin: 5px auto;
+    margin-right: 5px;
+
+    &:hover{
+        background-color: darken(#94a6bf,20%);
+    }
+    }
