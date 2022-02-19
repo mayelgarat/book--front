@@ -12,7 +12,6 @@ export const userService = {
   logout,
   signup,
   getLoggedinUser,
-
 };
 
 window.us = userService;

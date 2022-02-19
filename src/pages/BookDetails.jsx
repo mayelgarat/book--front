@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import React from "react";
-import { bookService } from "../services/bookService";
+import { bookService } from "../services/book.service";
 // import bookImg from "../assets/img/book3.JPG";
 // import {Reviews} from '../cmps/Reviews.jsx'
 // import {ChatRoom} from '../cmps/ChatRoom.jsx'
@@ -27,14 +27,10 @@ class _BookDetails extends React.Component {
       <section className="book-details">
         <div>
           <h1 className="margin-top">{book.title}</h1>
-
           <h3>Price: {book.price}$</h3>
           <h3>Author: {book.author}</h3>
           <h3>Genre: {book.genre}</h3>
           <h3>Publication date: {new Date(book.publication_date).getMonth() + "/" + new Date(book.publication_date).getDate() + "/" + new Date(book.publication_date).getFullYear()}</h3>
-
-
-
           <div>
             <p>{book.description}</p>
           </div>
@@ -45,7 +41,6 @@ class _BookDetails extends React.Component {
           <div className="img-con">
             <img src={book.img}></img>
           </div>
-
       </section>
     );
   }

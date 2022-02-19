@@ -1,24 +1,24 @@
 
 
 // Setup
-@import "./styles/setup/variables";
-@import "./styles/setup/functions";
-@import "./styles/setup/mixins";
-@import "./styles/setup/typography";
+@import "./assets/styles/setup/variables";
+@import "./assets/styles/setup/functions";
+@import "./assets/styles/setup/mixins";
+@import "./assets/styles/setup/typography";
 
 // Basics
-@import "./styles/basics/helpers";
-@import "./styles/basics/layout";
-@import "./styles/basics/base";
-@import "./styles/basics/buttons";
+@import "./assets/styles/basics/helpers";
+@import "./assets/styles/basics/layout";
+@import "./assets/styles/basics/base";
+@import "./assets/styles/basics/buttons";
 
-// Components
-@import "./styles/cmps/BookDetails";
-@import "./styles/cmps/BookPreview";
-@import "./styles/cmps/BookList";
-@import "./styles/cmps/BookApp";
-@import "./styles/cmps/BookAdd";
-@import "./styles/cmps/Header";
+// Compone
+@import "./assets/styles/cmps/BookDetails";
+@import "./assets/styles/cmps/BookPreview";
+@import "./assets/styles/cmps/BookList";
+@import "./assets/styles/cmps/BookApp";
+@import "./assets/styles/cmps/BookAdd";
+@import "./assets/styles/cmps/Header";
 
 
 

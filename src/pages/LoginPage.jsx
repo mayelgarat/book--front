@@ -1,8 +1,6 @@
 import { connect } from "react-redux";
 import React from "react";
-import { signup, logout } from "../store/user.action";
-import {  log} from "../store/user.action";
-import { userService } from "../services/userService.js";
+import { log, signup, logout } from "../store/user.action";
 import { Login } from "../cmps/Login.jsx";
 
 class _LoginPage extends React.Component {
@@ -20,13 +18,10 @@ class _LoginPage extends React.Component {
 
   onSignup = (credentials) => {
     this.props.signup(credentials);
-
   };
 
   onLogout = () => {
-      console.log('logout');
     this.props.logout();
-
   };
 
   render() {

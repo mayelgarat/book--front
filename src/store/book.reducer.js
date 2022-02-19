@@ -5,7 +5,7 @@ const initialState = {
    
     books: [],
     book:null,
-    currFilterBy: null,
+    msg: false,
 }
 
 export function bookReducer(state = initialState, action) {
@@ -23,8 +23,7 @@ export function bookReducer(state = initialState, action) {
         case 'REMOVE_BOOK':
             newState = { ...state, books: state.books.filter(book => book.ISBN !== action.bookISBN) }
             break;
-     
-           
+    
         default:
     }
     return newState;

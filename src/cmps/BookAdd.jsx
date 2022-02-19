@@ -2,7 +2,7 @@ import { connect } from "react-redux";
 import React from "react";
 import { DatePickerComponent } from '@syncfusion/ej2-react-calendars';
 import { loadBooks } from "../store/book.action";
-import { bookService } from "../services/bookService.js";
+import { bookService } from "../services/book.service.js";
 
 export class _BookAdd extends React.Component {
 
@@ -24,10 +24,7 @@ export class _BookAdd extends React.Component {
     
     const value = target.value;
     this.setState((prevState) => ({
-      book: { ...prevState.book, [field]: value }}), ()=>{
-        console.log('this.state.book:', this.state.book);
-        
-      });
+      book: { ...prevState.book, [field]: value }}))
   }
 
   onAddBook = async (ev) => {
@@ -76,11 +73,7 @@ export class _BookAdd extends React.Component {
     return <section className="book-add">
       <button onClick={this.toggleModal}>Add new book +</button>
       {isModalOpen && <form className="book-form" onSubmit={this.onAddBook}>
-        {/* <div> */}
-
       <button onClick={this.toggleModal} className="close">X</button>
-        {/* </div> */}
-
         <input
           placeholder="Title"
           value={this.state.book.title}
@@ -129,10 +122,8 @@ export class _BookAdd extends React.Component {
         </div>
         <button type="submit" className="add-book-btn">Add</button>
       </form>}
+      
     </section>
-
-
-
   }
 }
 function mapStateToProps({ bookModule }) {

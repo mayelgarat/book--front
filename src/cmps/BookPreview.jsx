@@ -22,10 +22,7 @@ export function BookPreview({ book, onRemoveBook }) {
         </Link>
         <button className='delete-btn' onClick={() => onRemoveBook(book.ISBN)}><AiOutlineDelete/></button>
       </div>
-
     </div>
   );
 }
 
-
-// export const BookPreview = connect(mapStateToProps)(_BookPreview);

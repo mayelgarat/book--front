@@ -2,9 +2,7 @@
 import React from "react";
 import { NavLink } from 'react-router-dom'
 
-
 export function Header() {
-
   return (
     <header className="full flex space-between">
       <div className="full flex space-between ">
@@ -19,10 +17,8 @@ export function Header() {
           <NavLink to={`/`}>
             <h2>Signup</h2>
           </NavLink>
-
         </div>
       </div>
-
     </header>
   );
 }
