@@ -8,6 +8,7 @@ export function removeBook(bookISBN) {
      
     } catch (err) {
       console.log("Cannot remove book", err);
+      return err
     }
   };
 }
@@ -20,7 +21,8 @@ export function loadBooks() {
       dispatch(action);
     } catch (err) {
       console.log("cannot find books", err);
-      throw err;
+      return (err)
+      // throw err;
     }
   };
 }
@@ -33,8 +35,7 @@ export function addBook(book) {
       const action = { type: "ADD_BOOK", book: savedBook };
       dispatch(action);
     }
-     
-  
+      
   catch(err) {
     console.log('Cannot add book', err);
       }

@@ -13,8 +13,8 @@ class _BookApp extends React.Component {
     this.props.loadBooks()
   }
 
-  onRemoveBook = (bookISBN) => {
-    this.props.removeBook(bookISBN)
+  onRemoveBook = ( bookISBN) => {
+  this.props.removeBook(bookISBN)
     this.props.loadBooks()
   }
 

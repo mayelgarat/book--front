@@ -16,8 +16,6 @@ export const bookService = {
 };
 
 async function query() {
-
-
     try {
       const books = await httpService.get(`book`);
       return books;
